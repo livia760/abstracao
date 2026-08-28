@@ -63,8 +63,55 @@
         }
     }
 
+    //EXERCICIO 3
+    namespace abstracao
+    {
+        internal class Program
+        {
+            static void Main(string[] args)
+            {
+                contabancaria conta1 = new contabancaria();
+                conta1.Titular = "João Silva";
+                conta1.NumeroConta = "12345-6";
+                conta1.Saldo = "1500.00";
+                contabancaria conta2 = new contabancaria();
+                conta2.Titular = "Maria Souza";
+                conta2.NumeroConta = "98765-4";
+                conta2.Saldo = "2500.00";
+                Console.WriteLine("Informações da Conta 1:");
+                conta1.ExibirInformacoes();
+                Console.WriteLine("\nInformações da Conta 2:");
+                conta2.ExibirInformacoes();
+            }
+        }
+    }
+        //EXERCICIO 3
+        namespace Abstracao
+    {
+        internal class Program
+        {
+            static void Main(string[] args)
+            {
+                contabancaria conta1 = new contabancaria();
+                conta1.Titular = "João Silva";
+                conta1.NumeroConta = "12345-6";
+                conta1.Saldo = "1500.00";
 
-    Console.ReadKey();
+                contabancaria conta2 = new contabancaria();
+                conta2.Titular = "Maria Souza";
+                conta2.NumeroConta = "98765-4";
+                conta2.Saldo = "2500.00";
+
+                Console.WriteLine("Informações da Conta 1:");
+                conta1.ExibirInformacoes();
+
+                Console.WriteLine("\nInformações da Conta 2:");
+                conta2.ExibirInformacoes();
+            }
+        }
+    }
+
+         Console.ReadKey();
         }
     }
 }
