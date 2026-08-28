@@ -46,3 +46,47 @@
             }
         }
     }
+
+    ATIVIDADE 4:
+    using System;
+
+namespace Futebol
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+          
+            Time meuTime = new Time();
+
+            meuTime.NomeDoTime = "Flamengo";
+
+          
+            Jogador jogador1 = new Jogador();
+            jogador1.Nome = "Gabriel";
+            jogador1.Posicao = "Atacante";
+            jogador1.NumeroCamisa = 10;
+
+            Jogador jogador2 = new Jogador();
+            jogador2.Nome = "João";
+            jogador2.Posicao = "Meio-campo";
+            jogador2.NumeroCamisa = 8;
+
+            Jogador jogador3 = new Jogador();
+            jogador3.Nome = "Pedro";
+            jogador3.Posicao = "Atacante";
+            jogador3.NumeroCamisa = 9;
+
+            
+            meuTime.AdicionarJogador(jogador1);
+            meuTime.AdicionarJogador(jogador2);
+            meuTime.AdicionarJogador(jogador3);
+
+          
+            Console.WriteLine("Time: " + meuTime.NomeDoTime);
+            meuTime.ListarJogadores();
+
+            Console.ReadLine();
+        }
+    }
+}
