@@ -40,7 +40,31 @@
             produto2.QuantidadeEstoque = 25;
 
 
-            Console.ReadKey();
+            //EXERCICIO 2
+           namespace Abstracao
+    {
+        internal class Program
+        {
+            static void Main(string[] args)
+            {
+                Aluno Aluno = new Aluno();
+
+                Console.WriteLine("Nome Completo:");
+                Aluno.Nome = Console.ReadLine();
+                Console.WriteLine("Número de Matrícula:");
+                Aluno.Matricula = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("1ª Nota:");
+                Aluno.Nota1 = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("2ª Nota:");
+                Aluno.Nota2 = Convert.ToDouble(Console.ReadLine());
+
+                Aluno.CalcularMedia();
+            }
+        }
+    }
+
+
+    Console.ReadKey();
         }
     }
 }
